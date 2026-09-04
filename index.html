@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bootstrap demo</title>"
+</head>
+
+<body>
+  <!doctype html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Course Registration</title>
+    <link="https: //cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Lesson 10 CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="card col col-mid-2">
+      <div class="card-body">
+        <h1 class="card-title">html</h1>
+      </div>
+      <div class="card-body">
+        <h2 claa="css"></h2>
+      </div>
+
+      <div class="card-body">
+        <h3 class="java script"></h3>
+      </div>
+      <div class="card-body">
+        <h4 class="register"></h4>
+      </div>
+    </div>
+    <!-- ==================================================
+         PAGE HEADER
+         Previous lessons: colors, fonts, spacing
+    =================================================== -->
+
+    <header>
+      <h1>Web Development & AI</h1>
+      <p>Course Registration Form</p>
+    </header>
+
+    <!-- ==================================================
+         MAIN CONTENT
+    =================================================== -->
+
+    <main>
+      <section class="form-container">
+        <h2>Register for the Course</h2>
+
+        <p class="intro">
+          Fill in the form below to register for the Web Development & AI
+          course.
+        </p>
+
+        <!-- ==================================================
+             REGISTRATION FORM
+
+             Lesson 10:
+             The form fields will be arranged using CSS Grid.
+        =================================================== -->
+
+        <form>
+          <!-- Full Name -->
+          <div class="form-group">
+            <label for="fullname"> Full Name: </label>
+
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required />
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label for="email"> Email Address: </label>
+
+            <input type="email" id="email" name="email" placeholder="example@email.com" required />
+          </div>
+
+          <!-- Phone -->
+          <div class="form-group">
+            <label for="phone"> Phone Number: </label>
+
+            <input type="tel" id="phone" name="phone" placeholder="+254 713771840" required />
+          </div>
+
+          <!-- Password -->
+          <div class="form-group">
+            <label for="password"> Password: </label>
+
+            <input type="password" id="password" name="password" placeholder="Enter your password" required />
+          </div>
+
+          <!-- Country -->
+          <div class="form-group">
+            <label for="country"> Country: </label>
+
+            <select id="country" name="country" required>
+              <option value="">-- Select Country --</option>
+
+              <option value="Kenya">Kenya</option>
+
+              <option value="Uganda">Uganda</option>
+
+              <option value="Tanzania">Tanzania</option>
+
+              <option value="Rwanda">Rwanda</option>
+
+              <option value="Burundi">Burundi</option>
+            </select>
+          </div>
+
+          <!-- Date of Birth -->
+          <div class="form-group">
+            <label for="dob"> Date of Birth: </label>
+
+            <input type="date" id="dob" name="dob" required />
+          </div>
+
+          <!-- ==================================================
+               GENDER
+
+               This field will demonstrate a Grid item
+               containing multiple smaller elements.
+          ================================= -->
+
+          <div class="form-group full-width">
+
+            <label>Gender:</label>
+
+            <div class="options">
+
+              <div class="option">
+                <input type="radio" id="male" name="gender" value="Male" />
+
+                <label for="male">
+                  Male
+                </label>
+              </div>
+
+
+              <div class="option">
+                <input type="radio" id="female" name="gender" value="Female" />
+
+                <label for="female">
+                  Female
+                </label>
+              </div>
+
+
+              <div class="option">
+                <input type="radio" id="other" name="gender" value="Prefer not to say" />
+
+                <label for="other">
+                  Prefer not to say
+                </label>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- ==================================================
+               HOBBIES
+          =================================================== -->
+
+          <div class="form-group full-width">
+            <label>Hobbies:</label>
+
+            <div class="options">
+              <div class="option">
+                <input type="checkbox" id="reading" name="hobbies" value="Reading" />
+
+                <label for="reading"> Reading </label>
+              </div>
+
+              <div class="option">
+                <input type="checkbox" id="coding" name="hobbies" value="Coding" />
+
+                <label for="coding"> Coding </label>
+              </div>
+
+              <div class="option">
+                <input type="checkbox" id="music" name="hobbies" value="Music" />
+
+                <label for="music"> Music </label>
+              </div>
+
+              <div class="option">
+                <input type="checkbox" id="sports" name="hobbies" value="Sports" />
+
+                <label for="sports"> Sports </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Biography -->
+          <div class="form-group full-width">
+            <label for="biography"> Biography: </label>
+
+            <textarea id="biography" name="biography" rows="5"
+              placeholder="Tell us a little about yourself..."></textarea>
+          </div>
+
+          <!-- Profile Picture -->
+          <div class="form-group full-width">
+            <label for="profile-picture"> Profile Picture: </label>
+
+            <input type="file" accept="images/*" id="profile-picture" name="profile-picture" />
+          </div>
+
+          <!-- Submit Button -->
+          <div class="form-actions full-width">
+            <button type="submit">Register</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- ==================================================
+         FOOTER
+    =================================================== -->
+
+    <footer>
+      <p>&copy; 2026 Web Development & AI Course. All rights reserved.</p>
+    </footer>
+  </body>
+
+  </html>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+body {
+    background-color: aliceblue;
+    color: aquamarine;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    color: cyan;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 25px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.form-container {
+    background-color: beige;
+    max-width: 900px;
+    margin: 0cap;
+    border: ipx solidgray;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.form-containerh2 {
+    color: aquamarine;
+    margin: o;
+    font-size: small;
+}
+
+.intro {
+    margin-bottom: 25px;
+    color: blue;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 2fr;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: blueviolet;
+}
+
+input,
+select,
+textarea {
+    font-family: fantasy;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solidgray;
+    border-radius: 10px;
+    box-sizing: content-box;
+    background-color: beige;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: cadetblue;
+    outline: none;
+}
+
+.full-width {
+    grid-column: 1/-1;
+}
+
+.option {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    /*cross axis*/
+    gap: 7px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+input type=["file"] {
+    background-color: golg;
+}
+
+.form-action {
+    display: flex;
+    justify-content: center;
+    /*main axis*/
+    margin: top;
+}
+
+button {
+    background-color: blue;
+    color: aqua;
+    border: none;
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: bisque;
+}
+
+footer {
+    background-color: aquamarine;
+    color: blanchedalmond;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+@media(min-width:700px) {
+    main {
+        padding: 30px;
+    }
+
+    .form-container {
+        padding: 30px;
+    }
+
+    form {
+        grid-template-columns: 2fr 1fr;
+    }
+
+}
